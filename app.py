@@ -35,12 +35,13 @@ if uploaded_file is not None:
     img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
 
     # Make prediction
-    predictions = model.predict(img_array)[0]
+    predictions = model.predict(img_array)
     predicted_class = class_labels[np.argmax(predictions)]
     confidence = round(100 * (np.max(predictions[0])), 2)
 
     # Display results
     st.write(f"The provided plant is most likely : {predicted_class}")
+    st.write(f'Confidence level: {confidence})
 
 
 
