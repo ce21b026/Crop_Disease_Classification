@@ -41,6 +41,6 @@ if uploaded_file is not None:
 
     # Display results
     st.write(f"The provided plant is most likely : {predicted_class}")
-    st.write(f"The confidence level is : {confidence}")
+
 
 
