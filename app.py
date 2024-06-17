@@ -13,7 +13,7 @@ custom_objects = {
 }
 
 # Load the trained model
-model = tf.keras.models.load_model('my_model.h5',custom_objects=custom_objects)
+model = tf.keras.models.load_model('cnn_model.keras')
 
 # Define class labels 
 class_labels = {0: 'Potato___Early_blight', 1: 'Potato___Late_blight', 2:'Potato___healthy' }   
